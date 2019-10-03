@@ -7,7 +7,9 @@ import axios from 'axios'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import './lib/mui/css/mui.min.css'
+import './lib/mui/css/icons-extra.css'
 import routerConfig from './router.config.js'
+import VueResource from 'vue-resource'
 
 Vue.config.productionTip = false
 //配置路由
@@ -18,6 +20,8 @@ Vue.prototype.axios = axios;
 
 //配置ui组件
 Vue.use(MintUI);
+//配置jsonp发送
+Vue.use(VueResource);
 
 new Vue({
   el: '#app',
