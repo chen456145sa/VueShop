@@ -27,8 +27,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 40px;
-  overflow-x: hidden;
+  padding-bottom: 50px;
+  overflow-x: hidden; /*去横向滚动条*/
 }
+/*tabbar动画*/
 .v-enter {
 	opacity: 1;
 	transform: translateX(100%);
