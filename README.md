@@ -17,4 +17,7 @@
 5.配置路由
 6.创建新闻详情页 NewInfo.vue,rest形式获得的数据{{$route.params}}
 
-
+##加载更多功能
+1.绑定点击事件，pageIndex 自增
+2.每当pageIndex 自增 时 发送ajax 请求数据
+3.将得到的数据 拼接到原来的comments 上  使用 this.comments.concat( data ) 

@@ -4,6 +4,7 @@ import SearchContainer from './components/tabbar/SearchContainer.vue'
 import ShopCartContainer from './components/tabbar/ShopCartContainer.vue'
 import NewsList from './components/news/NewsList.vue'
 import NewInfo from './components/news/NewInfo.vue'
+import PhotoList from './components/photos/PhotoList.vue'
 export default {
 	routes: [
 	{
@@ -33,6 +34,10 @@ export default {
 	{
 		path:'/home/newsinfo/:id',  //restful 式 路由
 		component: NewInfo
+	},
+	{
+		path:'/home/photolist',
+		component: PhotoList
 	}
 	],
 	linkActiveClass: 'mui-active'   //用router-link-active 去覆盖mui-active类

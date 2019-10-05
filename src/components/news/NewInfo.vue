@@ -8,10 +8,16 @@
 		<div class="content">
 			{{news.content}}
 		</div>
+		<hr />
+		<!--评论区-->
+		<!--向子组件传 id-->
+		<comment :id='this.id'></comment>
+		
 	</div>
 </template>
 
 <script>
+	import Comment from '../subComponent/comment.vue';
 	export default {
 		data() {
 			return {
@@ -19,6 +25,9 @@
 				newsInfo: [],
 				news:{}
 			}
+		},
+		components: {
+			Comment
 		},
 		created() {
 			this.getNewsInfo();
